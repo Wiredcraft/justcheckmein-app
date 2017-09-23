@@ -25,9 +25,9 @@
     <div class='register'>
       <h2>Let's get started! Name your event:</h2>
       <div class='field'>
-        <input type='text' value='' placeholder='Name of your event'/>
+        <input id='eventName' type='text' value='' placeholder='Name of your event'/>
       </div>
-      <input type='submit' class='button' value='Create an event'/>
+      <input id='createEvent' type='submit' class='button' value='Create an event'/>
     </div>
   </section>
 
@@ -38,4 +38,32 @@
     </nav>
   </footer>
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script type="text/javascript">
+  const BTNcreateEvent = document.querySelector('#createEvent')
+  BTNcreateEvent.addEventListener('click', () => {
+    const eventname = document.querySelector('#eventName').value
+    const host = 'http://localhost:3000'
+    if(!eventname) {
+      window.alert('Please fill the name first, before create a event')
+    } else {
+      let event = null;
+      let users = null;
+      axios.post(`${host}/api/events`, {
+        name: eventname
+      })
+      .then(({ data }) => {
+        event = data
+        return axios.get(`${host}/api/events/${event.id}/users`)
+      })
+      .then(({ data }) => {
+        let users = data
+      })
+      .catch(error => {
+        window.alert('Create Event failed, please try again')
+      });
+    }
+  })
+</script>
 </html>
