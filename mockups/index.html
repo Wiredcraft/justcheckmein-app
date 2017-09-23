@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <title>JustCheckMeIn | The simplest way to manage events with WeChat</title>
+
+  <!-- CSS -->
+  <link href='/css/style.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body{% if page.class %} class='page-{{ page.class }}'{% endif %}>
+  <header id='header'>
+    <span class='logo'>JustCheckMeIn</span>
+    <nav class='menu'>
+      <a>About</a>
+      <a>Contact</a>
+    </nav>
+  </header>
+
+  <section id='content'>
+    <div class='pitch'>
+      <h1>The simplest way to manage events with WeChat</h1>
+      <p>Whether you're organizing a 10 people meetup or a 2,000 attendees conference,
+      use WeChat to register people, generate their badges and follow up.</p>
+    </div>
+    <div class='register'>
+      <h2>Let's get started! Name your event:</h2>
+      <div class='field'>
+        <input type='text' value='' placeholder='Name of your event'/>
+      </div>
+      <input type='submit' class='button' value='Create an event'/>
+    </div>
+  </section>
+
+  <footer id='footer'>
+    <span class='copyright'>Copyright © 2016 <a>Wiredcraft</a> Co. Ltd.</span>
+    <nav class='menu'>
+      <a>Terms of Service</a>
+    </nav>
+  </footer>
+</body>
+</html>
