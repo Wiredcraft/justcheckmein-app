@@ -11,7 +11,7 @@ install: clean
 	# bower install --config.directory=$(js_vendors) $(js_packages)
 
 css:
-	sass -I _sass
+	sass _sass/main.scss style.css
 
 serve:
 	jekyll serve --config _config.yml --incremental

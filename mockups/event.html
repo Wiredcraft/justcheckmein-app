@@ -4,55 +4,73 @@
   <title>JustCheckMeIn | The simplest way to manage events with WeChat</title>
 
   <!-- CSS -->
-  <link href='/css/style.css' rel='stylesheet' type='text/css'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
 </head>
 
 <body{% if page.class %} class='page-{{ page.class }}'{% endif %}>
   <header id='header'>
-    <span class='logo'>JustCheckMeIn</span>
-    <nav class='menu'>
-      <a>About</a>
-      <a>Contact</a>
-    </nav>
+    <div class='wrapper'>
+      <span class='logo'>JustCheckMeIn</span>
+      <nav class='menu'>
+        <a>About</a>
+        <a>Contact</a>
+      </nav>
+    </div>
   </header>
 
   <section id='content'>
-    <div class='header'>
-      <div class='controls'>
-        <button class='button'>Edit</button>
-        <button class='button'>QRcode</button>
+    <div class='wrapper'>
+      <div class='header'>
+        <h1>Shanghai JS meetup, March 2017</h1>
       </div>
-      <h1>Shanghai JS meetup, March 2017</h1>
-    </div>
-    <div class='body'>
-      <h2>3 attendees</h2>
-      <ul class='listing'>
-        <li clas='headers'>
-          <span class='user'>User</span>
-          <span class='time'>Check-in time</span>
-          <span class='actions'>Actions</span>
-        </li>
-        <li class='item'>
-          <div class='controls'>
-            <button class='button'>Details</button>
-            <button class='button'>Badge</button>
-          </div>
-          <img src='https://d8142femxnlg1.cloudfront.net/cropped-profile-photos/041e3baf430af7fe8d3321ddc25c8753023cf2dc-s300.jpg'/>
-          <h3 class='nickname'>hunvreus</h3>
-          <div class='details'>
-            <span class='gender'>Male</span> | <span class='location'>Shanghai, Shanghai, China</span>
-          </div>
-          <time class='time'>today, 14:50 PM</time>
-        </li>
-      </ul>
+      <div class='body'>
+        <div class='controls'>
+          <button class='button'>Edit</button>
+          <button class='button'>QRcode</button>
+        </div>
+        <h2>3 attendees</h2>
+        <ul class='listing'>
+          <li clas='headers'>
+            <span class='user'>User</span>
+            <span class='time'>Check-in time</span>
+            <span class='actions'>Actions</span>
+          </li>
+          <li class='item'>
+            <div class='controls'>
+              <button class='button'>Details</button>
+              <button class='button'>Badge</button>
+            </div>
+            <img src='https://d8142femxnlg1.cloudfront.net/cropped-profile-photos/041e3baf430af7fe8d3321ddc25c8753023cf2dc-s300.jpg'/>
+            <h3 class='nickname'>hunvreus</h3>
+            <div class='details'>
+              <span class='gender'>Male</span> | <span class='location'>Shanghai, Shanghai, China</span>
+            </div>
+            <time class='time'>today, 14:50 PM</time>
+          </li>
+          <li class='item'>
+            <div class='controls'>
+              <button class='button'>Details</button>
+              <button class='button'>Badge</button>
+            </div>
+            <img src='https://d8142femxnlg1.cloudfront.net/cropped-profile-photos/041e3baf430af7fe8d3321ddc25c8753023cf2dc-s300.jpg'/>
+            <h3 class='nickname'>hunvreus</h3>
+            <div class='details'>
+              <span class='gender'>Male</span> | <span class='location'>Shanghai, Shanghai, China</span>
+            </div>
+            <time class='time'>today, 14:50 PM</time>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <footer id='footer'>
-    <span class='copyright'>Copyright © 2016 <a>Wiredcraft</a> Co. Ltd.</span>
-    <nav class='menu'>
-      <a>Terms of Service</a>
-    </nav>
+    <div class='wrapper'>
+      <span class='copyright'>Copyright © 2016 <a>Wiredcraft</a> Co. Ltd.</span>
+      <nav class='menu'>
+        <a>Terms of Service</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
