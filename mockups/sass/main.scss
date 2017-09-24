@@ -2,6 +2,7 @@
 
 /* Layout */
 
+$create: 420px;
 $wrapper: 960px;
 
 /* Fonts */
@@ -25,8 +26,8 @@ $blue: #0052CC;
 // $regular: 16 !default;
 // $larger: 18 !default;
 // $large: 24 !default;
-// $huge: 32 !default;
-$gigantic: 36;
+// $huge: 24;
+// $gigantic: 36;
 // $humongous: 64 !default;
 
 /* Partials */
@@ -130,7 +131,47 @@ textarea,
 
 #content {
   background: #FFF;
-  padding: 3*$space 0;
+  .wrapper {
+    padding: 3*$space 0;
+  }
+  .hero {
+    background: $blue;
+    color: #FFF;
+    text-align: center;
+    h1,
+    p,
+    .create {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      color: inherit;
+      margin-bottom: 2*$space;
+    }
+    .create {
+      margin-top: $space;
+      max-width: $create;
+      width: 100%;
+      input {
+        color: $base;
+        padding: $space/2 1.5*$space/2;
+        width: 100%;
+        &[type=text] {
+          margin-bottom: $space/2;
+        }
+      }
+      .button {
+        background: #FFF;
+        color: $blue;
+        &:hover {
+          background: tint($blue, 90%);
+        }
+        &:active {
+          background: tint($blue, 80%);
+        }
+      }
+    }
+  }
   .count {
     margin-bottom: $space/2;
   }

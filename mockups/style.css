@@ -426,8 +426,8 @@ h6 {
   margin: 0 0 24px; }
 
 h1 {
-  font-size: 36px;
-  font-size: 3.6rem; }
+  font-size: 48px;
+  font-size: 4.8rem; }
 
 h2 {
   font-size: 32px;
@@ -843,8 +843,37 @@ textarea,
 
 /* Content */
 #content {
-  background: #FFF;
-  padding: 72px 0; }
+  background: #FFF; }
+  #content .wrapper {
+    padding: 72px 0; }
+  #content .hero {
+    background: #0052CC;
+    color: #FFF;
+    text-align: center; }
+    #content .hero h1,
+    #content .hero p,
+    #content .hero .create {
+      margin-left: auto;
+      margin-right: auto; }
+    #content .hero h1 {
+      color: inherit;
+      margin-bottom: 48px; }
+    #content .hero .create {
+      margin-top: 24px;
+      max-width: 420px;
+      width: 100%; }
+      #content .hero .create input {
+        padding: 12px 18px;
+        width: 100%; }
+        #content .hero .create input[type=text] {
+          margin-bottom: 12px; }
+      #content .hero .create .button {
+        background: #FFF;
+        color: #0052CC; }
+        #content .hero .create .button:hover {
+          background: #e6eefa; }
+        #content .hero .create .button:active {
+          background: #ccdcf5; }
   #content .count {
     margin-bottom: 12px; }
   #content .listing {
