@@ -1,0 +1,282 @@
+@import 'helpers';
+
+/*** FONTS ***/
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*** CUSTOM ***/
+
+body {
+	background: @silver;
+	color: @black;
+	font-family: @font;
+	font-weight: 400;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: @black;
+}
+
+.controls {
+  float: right;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: @wrapper;
+  width: 90%;
+}
+
+.button {
+	background: @silver;
+	border: 1px solid @line;
+  border-radius: @radius;
+  box-sizing: border-box;
+	box-shadow: @shadow;
+	color: inherit;
+	display: inline-block;
+	font-size: inherit;
+	font-weight: bold;
+	line-height: 140%;
+	outline: none;
+	padding: 1.5*@space/4 1.5*@space/2;
+	text-align: center;
+	text-decoration: none;
+	transition-property: background, border, color;
+	transition-duration: @ease;
+	&.primary {
+		background: @blue;
+		border: 1px solid darken(@blue, 20%);
+		color: #FFF;
+		&:hover {
+			background: lighten(@blue, 5%);
+			color: #FFF;
+		}
+	}
+	&:hover,
+	&:focus {
+		background: #FFF;
+		color: inherit;
+		text-decoration: none;
+	}
+	&:active,
+	&.active {
+		background: @silver;
+		box-shadow: none;
+		color: inherit;
+		text-decoration: none;
+	}
+	&[disabled=disabled],
+	&[disabled=true],
+	&[disabled],
+	&.disabled {
+		color: @gray;
+	}
+  svg {
+    float: left;
+    fill: @black;
+    margin-right: 1.5*@space/4;
+    width: @space;
+  }
+}
+
+input,
+textarea,
+select {
+	background: #FFF;
+	border: 1px solid @line;
+	border-radius: @radius;
+	box-shadow: @shadow inset;
+	box-sizing: border-box;
+	display: block;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	padding: 1.5*@space/4 1.5*@space/2;
+	transition-property: background, border;
+	transition-duration: @ease;
+	&:active,
+	&:focus {
+		background: #FFF;
+		border-color: @blue;
+		outline: none;
+	}
+	&[disabled],
+	&[disabled=disabled],
+	&[disabled=true],
+	&[disabled],
+	&[readonly=true],
+	&[readonly=readonly],
+	&[readonly] {
+		border-color: @silver;
+		&:active,
+		&:focus,
+		&:hover {
+			background: @silver;
+			border-color: @silver;
+		}
+	}
+}
+
+.button.primary {
+  svg {
+    fill: #FFF;
+  }
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+
+/* Header */
+
+#header {
+  background: @blue;
+  color: #FFF;
+  text-align: right;
+  .logo {
+    float: left;
+    font-weight: bold;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .logo,
+  a {
+    display: inline-block;
+    padding: @space 0;
+  }
+  .menu {
+    a {
+      margin-left: @space;
+      &:hover {
+        border-top: 3px solid #FFF;
+        padding-top: @space - 3;
+      }
+    }
+  }
+}
+
+/* Content */
+
+#content {
+  background: #FFF;
+  .wrapper {
+    padding: 3*@space 0;
+  }
+  .hero {
+    background: @blue;
+    color: #FFF;
+    text-align: center;
+    h1,
+    p,
+    .create {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      color: inherit;
+      margin-bottom: 2*@space;
+    }
+    .create {
+      margin-top: @space;
+      max-width: @create;
+      width: 100%;
+      input {
+        color: @black;
+        padding: @space/2 1.5*@space/2;
+        width: 100%;
+        &[type=text] {
+          margin-bottom: @space/2;
+        }
+      }
+      .button {
+        background: #FFF;
+        color: @blue;
+				width: 100%;
+        &:hover {
+          background: tint(@blue, 90%);
+        }
+        &:active {
+          background: tint(@blue, 80%);
+        }
+      }
+    }
+  }
+  .count {
+    margin-bottom: @space/2;
+  }
+  .listing {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      background: #FFF;
+      border: 1px solid @line;
+      border-radius: @radius;
+      margin-bottom: @space/2;
+      padding: @space/2 1.5*@space/2;
+			&:after {
+			  content: ' ';
+		    visibility: hidden;
+		    display: block;
+		    height: 0;
+		    clear: both;
+			}
+      &:hover {
+        background: @silver;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      img {
+        border-radius: 50%;
+        float: left;
+        height: 2*@space;
+        margin-right: @space/2;
+      }
+      h3 {
+        margin: 0;
+      }
+      .details {
+        color: @gray;
+        @include font-size(@smaller);
+				margin-top: @space/4;
+      }
+    }
+  }
+}
+
+/* Footer */
+
+#footer {
+  color: @gray;
+  font-size: 14px;
+  padding: @space 0;
+  text-align: right;
+  a {
+    color: inherit;
+  }
+  .copyright {
+    float: left;
+  }
+}
