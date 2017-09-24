@@ -1,7 +1,10 @@
+/*** VARIABLES ***/
 /* Layout */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Lato");
+/* Sizes */
 /* Partials */
+/*** EGG SHIT ***/
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -403,10 +406,10 @@ body {
 
 a {
   cursor: pointer;
-  color: #0074D9;
+  color: #0052CC;
   text-decoration: none; }
   a:hover {
-    color: #0068c3;
+    color: #004ab8;
     text-decoration: underline; }
 
 h1,
@@ -422,8 +425,8 @@ h6 {
   margin: 0 0 24px; }
 
 h1 {
-  font-size: 48px;
-  font-size: 4.8rem; }
+  font-size: 36px;
+  font-size: 3.6rem; }
 
 h2 {
   font-size: 32px;
@@ -478,8 +481,8 @@ img {
 code,
 .code {
   background: #EEE;
-  border: 1px solid #DDDDDD;
-  border-radius: 2px;
+  border: 1px solid rgba(37, 56, 88, 0.1);
+  border-radius: 3px;
   display: inline-block;
   font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
   font-size: 14px;
@@ -495,7 +498,7 @@ pre .code {
 
 /* Tables */
 table {
-  border: 1px solid #DDDDDD;
+  border: 1px solid rgba(37, 56, 88, 0.1);
   margin: 0 0 24px;
   text-align: left; }
   table th,
@@ -516,13 +519,13 @@ table {
       font-weight: normal;
       white-space: nowrap; }
   table tbody tr {
-    border-top: 1px solid #DDDDDD;
+    border-top: 1px solid rgba(37, 56, 88, 0.1);
     transition-property: border;
     transition-duration: 0.2s; }
 
 .button {
   background: #EEE;
-  border-radius: 2px;
+  border-radius: 3px;
   box-sizing: border-box;
   color: inherit;
   display: inline-block;
@@ -544,33 +547,33 @@ table {
     color: inherit;
     text-decoration: none; }
   .button[disabled=disabled], .button[disabled=true], .button[disabled], .button.disabled {
-    background: #DDDDDD;
-    border-color: #c7c7c7;
-    color: #AAAAAA; }
+    background: rgba(37, 56, 88, 0.02);
+    border-color: rgba(3, 5, 7, 0.118);
+    color: rgba(37, 56, 88, 0.6); }
   .button.primary {
-    background: #0074D9;
-    border-radius: 2px;
+    background: #0052CC;
+    border-radius: 3px;
     box-sizing: border-box;
     color: #FFF;
     display: inline-block;
     outline: none;
     padding: 4px 24px;
-    border: 1px solid #0068c3; }
+    border: 1px solid #004ab8; }
     .button.primary:hover, .button.primary:focus {
-      background: #2689df;
+      background: #266cd4;
       color: #FFF;
       text-decoration: none; }
     .button.primary:active, .button.primary.active {
-      background: #0068c3;
+      background: #004ab8;
       color: #FFF;
       text-decoration: none; }
     .button.primary[disabled=disabled], .button.primary[disabled=true], .button.primary[disabled], .button.primary.disabled {
-      background: #DDDDDD;
-      border-color: #c7c7c7;
-      color: #AAAAAA; }
+      background: rgba(37, 56, 88, 0.02);
+      border-color: rgba(3, 5, 7, 0.118);
+      color: rgba(37, 56, 88, 0.6); }
   .button.secondary {
     background: #B10DC9;
-    border-radius: 2px;
+    border-radius: 3px;
     box-sizing: border-box;
     color: #FFF;
     display: inline-block;
@@ -586,9 +589,9 @@ table {
       color: #FFF;
       text-decoration: none; }
     .button.secondary[disabled=disabled], .button.secondary[disabled=true], .button.secondary[disabled], .button.secondary.disabled {
-      background: #DDDDDD;
-      border-color: #c7c7c7;
-      color: #AAAAAA; }
+      background: rgba(37, 56, 88, 0.02);
+      border-color: rgba(3, 5, 7, 0.118);
+      color: rgba(37, 56, 88, 0.6); }
   .button:active {
     box-shadow: none; }
 
@@ -605,14 +608,26 @@ table {
     float: left; }
   .bundle > .button:first-child,
   .bundle > *:first-child .button {
-    border-radius: 2px 0 0 2px; }
+    border-radius: 3px 0 0 3px; }
   .bundle > .button:last-child,
   .bundle > *:last-child .button {
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 3px 3px 0;
     border-right-width: 1px; }
 
 /*** FONTS ***/
 /*** CUSTOM ***/
+body {
+  background: #F4F5F7; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #253858; }
+
 .controls {
   float: right; }
 
@@ -623,22 +638,82 @@ table {
   max-width: 960px;
   width: 95%; }
 
-.listing {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .listing li {
-    border-bottom: 1px solid #DDDDDD; }
-  .listing .item img {
-    border-radius: 50%;
+.button,
+.button.primary {
+  padding: 9px 12px; }
+  .button svg,
+  .button.primary svg {
     float: left;
-    height: 48px;
-    margin-right: 12px; }
-  .listing .item h3 {
-    margin: 0; }
-  .listing .item .details {
-    color: #AAAAAA;
-    font-size: 14px;
-    font-size: 1.4rem; }
+    fill: #253858;
+    margin-right: 9px;
+    width: 24px; }
+
+.button.primary svg {
+  fill: #FFF; }
+
+/* Header */
+#header {
+  background: #0052CC;
+  color: #FFF;
+  text-align: right; }
+  #header .logo {
+    float: left;
+    font-weight: bold; }
+  #header a {
+    color: inherit;
+    text-decoration: none; }
+  #header .logo,
+  #header a {
+    display: inline-block;
+    padding: 24px 0; }
+  #header .menu a {
+    margin-left: 24px; }
+    #header .menu a:hover {
+      border-top: 3px solid #FFF;
+      padding-top: 21px; }
+
+/* Content */
+#content {
+  background: #FFF;
+  padding: 72px 0; }
+  #content .count {
+    margin-bottom: 12px; }
+  #content .listing {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #content .listing li {
+      background: #FFF;
+      border: 1px solid rgba(37, 56, 88, 0.1);
+      border-radius: 3px;
+      margin-bottom: 12px;
+      padding: 12px 18px; }
+      #content .listing li:hover {
+        background: rgba(37, 56, 88, 0.02); }
+      #content .listing li:last-child {
+        margin-bottom: 0; }
+      #content .listing li img {
+        border-radius: 50%;
+        float: left;
+        height: 48px;
+        margin-right: 12px; }
+      #content .listing li h3 {
+        margin: 0; }
+      #content .listing li .details {
+        color: rgba(37, 56, 88, 0.6);
+        font-size: 14px;
+        font-size: 1.4rem; }
+
+/* Footer */
+#footer {
+  color: rgba(37, 56, 88, 0.6);
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 24px 0;
+  text-align: right; }
+  #footer a {
+    color: inherit; }
+  #footer .copyright {
+    float: left; }
 
 /*# sourceMappingURL=style.css.map */
