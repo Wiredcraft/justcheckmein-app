@@ -17,7 +17,7 @@ export default class Event extends Component {
 
 	updateAttendees = () => {
 		const {host, event} = this.state
-		if (host && event.id) {
+		if (host && event && event.id) {
 			axios.get(`${this.state.host}/events/${this.state.event.id}/users`)
 			.then(({ data: attendees }) => {
 				console.log('>>> attendees', attendees)
