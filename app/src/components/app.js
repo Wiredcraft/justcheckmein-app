@@ -4,6 +4,7 @@ import { Router } from 'preact-router';
 import Header from './header';
 import Home from './home';
 import Event from './event';
+import Footer from './footer';
 
 export default class App extends Component {
 	/** Gets fired when the route changes.
@@ -22,6 +23,7 @@ export default class App extends Component {
 					<Home path="/" />
 					<Event path="/event/:hashId" />
 				</Router>
+				<Footer />
 			</div>
 		);
 	}

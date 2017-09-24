@@ -6,13 +6,13 @@ export default class Header extends Component {
 	render() {
 		return (
 			<header id='header' class={style.header}>
-				<h1 class='logo'>JustCheckMeIn</h1>
-				<nav class='menu'>
-					<Link href='/'>Home</Link>
-					<Link href='/about'>About</Link>
-					<Link href='/contact'>Contact</Link>
-					<Link href="/event/97w3r97m95j">WeChat Hackthon</Link>
-				</nav>
+				<div class='wrapper'>
+					<Link class='logo' href='/'>JustCheckMeIn</Link>
+					<nav class='menu'>
+						<Link href='/about'>About</Link>
+						<a href='mailto:hello@wiredcrat.com'>Contact</a>
+					</nav>
+				</div>
 			</header>
 		);
 	}

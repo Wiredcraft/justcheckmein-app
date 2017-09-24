@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*** VARIABLES ***/
 /* Layout */
 /* Fonts */
@@ -425,8 +426,8 @@ h6 {
   margin: 0 0 24px; }
 
 h1 {
-  font-size: 36px;
-  font-size: 3.6rem; }
+  font-size: 48px;
+  font-size: 4.8rem; }
 
 h2 {
   font-size: 32px;
@@ -614,6 +615,169 @@ table {
     border-radius: 0 3px 3px 0;
     border-right-width: 1px; }
 
+.field {
+  margin-bottom: 12px; }
+  .field .description {
+    color: rgba(37, 56, 88, 0.6);
+    display: block;
+    font-size: 12px;
+    font-size: 1.2rem; }
+
+label,
+.label {
+  font-size: 12px;
+  font-size: 1.2rem;
+  display: block;
+  font-weight: bold; }
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]),
+textarea,
+.select select {
+  background: #FFF;
+  border: 1px solid rgba(37, 56, 88, 0.1);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0 inset;
+  box-sizing: border-box;
+  display: block;
+  padding: 4px 6px;
+  transition-property: background, border;
+  transition-duration: 0.2s; }
+  input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]):hover,
+  textarea:hover,
+  .select select:hover {
+    border-color: rgba(6, 10, 15, 0.28); }
+  input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]):active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]):focus,
+  textarea:active,
+  textarea:focus,
+  .select select:active,
+  .select select:focus {
+    background: #FFF;
+    border-color: #0052CC;
+    outline: none; }
+  input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled], input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=disabled], input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=true], input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled], input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=true], input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=readonly], input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly],
+  textarea[disabled],
+  textarea[disabled=disabled],
+  textarea[disabled=true],
+  textarea[disabled],
+  textarea[readonly=true],
+  textarea[readonly=readonly],
+  textarea[readonly],
+  .select select[disabled],
+  .select select[disabled=disabled],
+  .select select[disabled=true],
+  .select select[disabled],
+  .select select[readonly=true],
+  .select select[readonly=readonly],
+  .select select[readonly] {
+    border-color: #EEE; }
+    input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled]:active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled]:focus, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled]:hover, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=disabled]:active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=disabled]:focus, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=disabled]:hover, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=true]:active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=true]:focus, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled=true]:hover, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled]:active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled]:focus, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[disabled]:hover, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=true]:active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=true]:focus, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=true]:hover, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=readonly]:active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=readonly]:focus, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly=readonly]:hover, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly]:active, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly]:focus, input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit])[readonly]:hover,
+    textarea[disabled]:active,
+    textarea[disabled]:focus,
+    textarea[disabled]:hover,
+    textarea[disabled=disabled]:active,
+    textarea[disabled=disabled]:focus,
+    textarea[disabled=disabled]:hover,
+    textarea[disabled=true]:active,
+    textarea[disabled=true]:focus,
+    textarea[disabled=true]:hover,
+    textarea[disabled]:active,
+    textarea[disabled]:focus,
+    textarea[disabled]:hover,
+    textarea[readonly=true]:active,
+    textarea[readonly=true]:focus,
+    textarea[readonly=true]:hover,
+    textarea[readonly=readonly]:active,
+    textarea[readonly=readonly]:focus,
+    textarea[readonly=readonly]:hover,
+    textarea[readonly]:active,
+    textarea[readonly]:focus,
+    textarea[readonly]:hover,
+    .select select[disabled]:active,
+    .select select[disabled]:focus,
+    .select select[disabled]:hover,
+    .select select[disabled=disabled]:active,
+    .select select[disabled=disabled]:focus,
+    .select select[disabled=disabled]:hover,
+    .select select[disabled=true]:active,
+    .select select[disabled=true]:focus,
+    .select select[disabled=true]:hover,
+    .select select[disabled]:active,
+    .select select[disabled]:focus,
+    .select select[disabled]:hover,
+    .select select[readonly=true]:active,
+    .select select[readonly=true]:focus,
+    .select select[readonly=true]:hover,
+    .select select[readonly=readonly]:active,
+    .select select[readonly=readonly]:focus,
+    .select select[readonly=readonly]:hover,
+    .select select[readonly]:active,
+    .select select[readonly]:focus,
+    .select select[readonly]:hover {
+      background: #EEE;
+      border-color: #EEE; }
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative; }
+  .select > select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background: #EEE;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: inherit;
+    display: inline-block;
+    outline: none;
+    padding: 4px 24px;
+    border: 1px solid #d6d6d6;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+    cursor: pointer;
+    padding: 4px 36px 4px 12px; }
+    .select > select:hover, .select > select:focus {
+      background: #f3f3f3;
+      color: inherit;
+      text-decoration: none; }
+    .select > select:active, .select > select.active {
+      background: #e2e2e2;
+      color: inherit;
+      text-decoration: none; }
+    .select > select[disabled=disabled], .select > select[disabled=true], .select > select[disabled], .select > select.disabled {
+      background: rgba(37, 56, 88, 0.02);
+      border-color: rgba(3, 5, 7, 0.118);
+      color: rgba(37, 56, 88, 0.6); }
+  .select:after {
+    bottom: 0;
+    content: '▾';
+    cursor: pointer;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 120%;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.actions {
+  border-top: 1px solid #EEE;
+  border-radius: 0 0 3px 3px;
+  margin-top: 12px;
+  padding-top: 12px;
+  text-align: right; }
+  .actions > * {
+    margin-left: 12px; }
+
 /*** FONTS ***/
 /*** CUSTOM ***/
 body {
@@ -636,17 +800,22 @@ h6 {
   margin-left: auto;
   margin-right: auto;
   max-width: 960px;
-  width: 95%; }
+  width: 90%; }
 
 .button,
 .button.primary {
-  padding: 9px 12px; }
+  padding: 9px 18px; }
   .button svg,
   .button.primary svg {
     float: left;
     fill: #253858;
     margin-right: 9px;
     width: 24px; }
+
+input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=hidden]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]),
+textarea,
+.select select {
+  padding: 9px 18px; }
 
 .button.primary svg {
   fill: #FFF; }
@@ -674,8 +843,37 @@ h6 {
 
 /* Content */
 #content {
-  background: #FFF;
-  padding: 72px 0; }
+  background: #FFF; }
+  #content .wrapper {
+    padding: 72px 0; }
+  #content .hero {
+    background: #0052CC;
+    color: #FFF;
+    text-align: center; }
+    #content .hero h1,
+    #content .hero p,
+    #content .hero .create {
+      margin-left: auto;
+      margin-right: auto; }
+    #content .hero h1 {
+      color: inherit;
+      margin-bottom: 48px; }
+    #content .hero .create {
+      margin-top: 24px;
+      max-width: 420px;
+      width: 100%; }
+      #content .hero .create input {
+        padding: 12px 18px;
+        width: 100%; }
+        #content .hero .create input[type=text] {
+          margin-bottom: 12px; }
+      #content .hero .create .button {
+        background: #FFF;
+        color: #0052CC; }
+        #content .hero .create .button:hover {
+          background: #e6eefa; }
+        #content .hero .create .button:active {
+          background: #ccdcf5; }
   #content .count {
     margin-bottom: 12px; }
   #content .listing {

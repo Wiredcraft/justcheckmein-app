@@ -1,4 +1,4 @@
-sass_vendors = _sass/vendors
+sass_vendors = sass/vendors
 sass_packages = egg-sass
 # js_vendors = assets/js
 # js_packages =
@@ -11,7 +11,7 @@ install: clean
 	# bower install --config.directory=$(js_vendors) $(js_packages)
 
 css:
-	sass _sass/main.scss style.css
+	sass sass/main.scss style.css
 
 serve:
 	jekyll serve --config _config.yml --incremental

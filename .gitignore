@@ -1,0 +1,6 @@
+.*
+!.gitignore
+*~
+
+# folder
+sass/vendors/
