@@ -4,7 +4,7 @@ import style from './style.less';
 
 export default class Event extends Component {
 	state = {
-		host: 'http://c3896085.ngrok.io/api',
+		host: 'https://hackathon.wiredcraft.net/api',
 		event: null,
 		attendees: []
 	};
@@ -79,7 +79,7 @@ export default class Event extends Component {
 						<h1>Event: {event ? event.name : ''}</h1>
 					</div>
 					<div class='body'>
-						<div class='count'><strong>3</strong> attendees</div>
+						<div class='count'><strong>{attendees ? attendees.length : '0'}</strong> attendees {event ? '| reference: ' + event.hashId : ''}</div>
 						<ul class='listing'>
 						{ attendees.map( attendee => (
 							<li>
@@ -91,10 +91,10 @@ export default class Event extends Component {
 										Badge
 									</a>
 								</div>
-								<img src='{attendee.avatarUrl}'/>
-								<span class='info'><a class='nickname'>{attendee.name}</a> checked in <time class='time'>today at {attendee.createdAt}</time></span>
+								<img src={attendee.avatarUrl}/>
+								<span class='info'><a class='nickname'>{attendee.nickName}</a> checked in <time class='time'> on {attendee.createdAt}</time></span>
 								<div class='details'>
-									<span class='gender'>{attendee.gender}</span> | <span class='location'>{attendee.city}, {attendee.province}, {attendee.country}</span>
+									<span class='gender'>City: </span> | <span class='location'>{attendee.city}</span>
 								</div>
 							</li>
 						))}

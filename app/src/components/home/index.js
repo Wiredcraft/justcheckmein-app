@@ -5,7 +5,7 @@ import style from './style.less';
 
 export default class Home extends Component {
 	state = {
-		host: 'http://c3896085.ngrok.io/api',
+		host: 'https://hackathon.wiredcraft.net/api',
 		eventName: ''
 	}
 	setEvent = e => {
@@ -33,7 +33,7 @@ export default class Home extends Component {
 		          <input type='text' placeholder='Name of your event' onInput={this.setEvent}/>
 							<Link class='button' onClick={this.createEvnet}>Create an event</Link>
 							<hr />
-							<Link class='button' href="/event/97w3r97m95j">Wechat Hackathon</Link>
+							<Link class='button' href="/event/w2xr4wnrnyj">Wechat Hackathon</Link>
 		        </form>
 		      </div>
 				</div>
